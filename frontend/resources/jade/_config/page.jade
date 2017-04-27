@@ -1,0 +1,32 @@
+- var date = new Date()
+- var dateNow = Date.now()
+- var page = {}
+- page.charset = "utf-8"
+- page.lang = "es"
+- page.url = "http://local.upc-conectate/"
+- page.static = "http://local.upc-conectate/public"
+- page.title = "upc-conectate"
+- page.description = "upc-conectate"
+- page.keywords = "upc-conectate"
+- page.author = "upc-conectate.com"
+- page.name = "upc-conectate"
+- page.viewport = "width=device-width, initial-scale=1.0"
+- page.version = '?ver='+ dateNow
+- page.robots = "index, follow"
+- page.favicon = page.static + "img/favicon.ico"+ page.version
+- page.bootstrap = false
+
+- page.og = {}
+- page.og.type = "website"
+- page.og.image = ""
+
+//- Aqui van las variables para yOSON
+- page.module       = "inicio"
+- page.controller   = "inicio"
+- page.action     = "index"
+
+//- Mensajes de error
+- page.requiredMessage= "Complete el campo por favor."
+- page.emailMessage= "Ingrese un email valido por favor."
+- page.passwordMessage= "Ingrese su password por favor."
+- page.passworConfirmdMessage= "El password no coninside."

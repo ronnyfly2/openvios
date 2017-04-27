@@ -1,0 +1,228 @@
+include ../_config/page.jade
+include ../_mixins/mixins.jade
+extends ../layouts/layout_inicio.jade
+block content
+	.container(data-page="home")
+		include ../_bones/_aside.jade
+		.content
+			section.banner_top
+				ul.slider_top
+					li
+						a(href="javascript:;")
+							img(src!="#{page.static}/img/banner_conocimiento.jpg")
+					li
+						a(href="javascript:;")
+							img(src!="#{page.static}/img/banner_conocimiento.jpg")
+					li
+						a(href="javascript:;")
+							img(src!="#{page.static}/img/banner_conocimiento.jpg")
+				article.row.advice_banner_top
+					.col.weather
+						.hack_space
+						.ctn
+							.icon_weather_one
+							span Campus Villa 10 de enero
+					.col.objectives
+						.hack_space
+						.ctn
+							.icon_check_top
+							span último dia para ingresar tus objetivos
+					.row.ctn_form
+						form(action="")
+							input.search(type="text" placeholder="Busca todo sobre Conéctate aquí")
+							.icon.icon-search
+			section.box_content_child
+				article.ctn.ctn_news
+					h3.title.title_black NOTICIAS
+					.row_news
+						.col.news_one
+							.ctn_img_news
+								img(src!="#{page.static}/img/news_one.png")
+								img.mask.mask_right(src!="#{page.static}/img/mask_right.png")
+							.ctn_txt
+								.date
+									i 1
+									span 29.05.2016 03.46 pm
+								h2 
+									a(href="javascript:;") Benny Graham dicta conferencia de emprendimiento
+								.tags 
+									a(href="javascript:;") Área
+									span  / 
+									a(href="javascript:;") Dirección
+									span  / 
+									a(href="javascript:;") Jefatura
+								.box_txt
+									span studdsdsalñd skñd sakñf dñskf jdsñk fñdsf jdsñkfjdsñfjds kñfd ñfk sadkjd asljd salkdjklsajd klsajdklj sakldjklsajd klsajdkljasl kdjklasjd klsajd klsajd klsadlk jsalkdj ksladhlksajdñ ashdklsadkl sajdkljasldkj askljd lksajdklsajdklj sakldj lksajdkl jssssd sd asd-sads xcxcsadsdsa
+						.col.box_news
+							.box_news_two
+								ul.owl-carousel.carousel_box
+									li
+										.ctn_img_news.ctn_img_news_right
+											img(src!="#{page.static}/img/news_two.png")
+											img.mask.mask_bottom(src!="#{page.static}/img/mask_bottom.png")
+										h2 
+											a(href="javascript:;") Fechas y respuestas del proceso de matricula
+										.tags
+											a(href="javascript:;") Área
+											span  / 
+											a(href="javascript:;") Dirección
+											span  / 
+											a(href="javascript:;") Jefatura
+										.date
+											span 29.05.2016 03.46 pm
+									li
+										.ctn_img_news.ctn_img_news_right
+											img(src!="#{page.static}/img/news_two.png")
+											img.mask.mask_bottom(src!="#{page.static}/img/mask_bottom.png")
+										h2 
+											a(href="javascript:;") Fechas y respuestas del proceso de matricula
+										.tags
+											a(href="javascript:;") Área
+											span  / 
+											a(href="javascript:;") Dirección
+											span  / 
+											a(href="javascript:;") Jefatura
+										.date
+											span 29.05.2016 03.46 pm
+							.box_news_two
+								ul.owl-carousel.carousel_box
+									li
+										.ctn_img_news
+											img(src!="#{page.static}/img/news_three.png")
+											img.mask.mask_bottom(src!="#{page.static}/img/mask_bottom.png")
+										h2 
+											a(href="javascript:;") Fechas y respuestas del proceso de matricula
+										.tags
+											a(href="javascript:;") Área
+											span  / 
+											a(href="javascript:;") Dirección
+											span  / 
+											a(href="javascript:;") Jefatura
+										.date
+											span 29.05.2016 03.46 pm
+									li
+										.ctn_img_news
+											img(src!="#{page.static}/img/news_three.png")
+											img.mask.mask_bottom(src!="#{page.static}/img/mask_bottom.png")
+										h2 
+											a(href="javascript:;") Fechas y respuestas del proceso de matricula
+										.tags
+											a(href="javascript:;") Área
+											span  / 
+											a(href="javascript:;") Dirección
+											span  / 
+											a(href="javascript:;") Jefatura
+										.date
+											span 29.05.2016 03.46 pm
+				article.ctn.ctn_dev_upc
+					h3.title.title_blue_upc MI DESARROLLO UPC
+					.col_jobs
+						h3.title.title_red OPORTUNIDADES LABORALES
+						ul.list_jobs
+							li
+								a(href="javascript:;")
+									.txt_list
+										strong Nombre del puesto número 1
+										span nombre del area
+										span 03/01/17 - 09/01/17
+									.icon.icon-mail
+							li
+								a(href="javascript:;")
+									.txt_list
+										strong Nombre del puesto número 2
+										span nombre del area
+										span 03/01/17 - 09/01/17
+									.icon.icon-mail
+							li
+								a(href="javascript:;")
+									.txt_list
+										strong Nombre del puesto número 3
+										span nombre del area
+										span 03/01/17 - 09/01/17
+									.icon.icon-mail
+					.col_process
+						.row_process
+							img(src!="#{page.static}/img/pocess.png")
+							span Proceso de Gestion de Desempeño
+							a(href="javascript:;") Ingresar al Success Factors
+						.row_learn
+							h3.title.title_learn APRENDE UPC
+							ul
+								li Beneficios de capacitación
+								li Solicitudes de capacitación
+								li Acceso a cursos Gold
+								li Avances de cursos Gold
+							.certified
+								img(src!="#{page.static}/img/certified.png")
+				article.ctn.ctn_birthdays
+					h3.title.title_lightblue CUMPLEAÑOS
+					ul.list_birthdays_tabs
+						li AYER
+						li.active HOY
+						li MAÑANA
+						li MES
+					ul.list_birthdays_users.scrollBar
+						li
+							a(href="javascript:;")
+								img(src!="#{page.static}/img/birthday_1.png")
+								.txt_list_user
+									strong Abad Gonzales
+									span Daniel Samuel
+									span Anexo 1152
+								.icon.icon-mail
+						li
+							a(href="javascript:;")
+								img(src!="#{page.static}/img/birthday_2.png")
+								.txt_list_user
+									strong Abad Gonzales
+									span Daniel Samuel
+									span Anexo 1152
+								.icon.icon-mail
+						li
+							a(href="javascript:;")
+								img(src!="#{page.static}/img/birthday_3.png")
+								.txt_list_user
+									strong Abad Gonzales
+									span Daniel Samuel
+									span Anexo 1152
+								.icon.icon-mail
+						li
+							a(href="javascript:;")
+								img(src!="#{page.static}/img/birthday_1.png")
+								.txt_list_user
+									strong Abad Gonzales
+									span Daniel Samuel
+									span Anexo 1152
+								.icon.icon-mail
+						li
+							a(href="javascript:;")
+								img(src!="#{page.static}/img/birthday_2.png")
+								.txt_list_user
+									strong Abad Gonzales
+									span Daniel Samuel
+									span Anexo 1152
+								.icon.icon-mail
+						li
+							a(href="javascript:;")
+								img(src!="#{page.static}/img/birthday_3.png")
+								.txt_list_user
+									strong Abad Gonzales
+									span Daniel Samuel
+									span Anexo 1152
+								.icon.icon-mail
+						li
+							a(href="javascript:;")
+								img(src!="#{page.static}/img/birthday_1.png")
+								.txt_list_user
+									strong Abad Gonzales
+									span Daniel Samuel
+									span Anexo 1152
+								.icon.icon-mail
+						li
+							a(href="javascript:;")
+								img(src!="#{page.static}/img/birthday_2.png")
+								.txt_list_user
+									strong Abad Gonzales
+									span Daniel Samuel
+									span Anexo 1152
+								.icon.icon-mail

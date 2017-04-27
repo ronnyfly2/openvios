@@ -1,0 +1,32 @@
+header#admin_header
+    div.logo_system
+        img(src!="{{Request::root()}}/img/logo_type_maszeguro_head.png")
+    div.admin_content.text_right.float_right
+        div.options_user
+            a.user_name
+                | {{ Auth::user()->fullname }}
+                i.icon.icon-user
+            ul
+                li
+                    a(href="{{ url('profile') }}") Mi Perfil
+                li
+                    a(href!="{{ url('logout') }}") Cerrar Sesión
+nav.admin_nav
+    ul
+        | @foreach($menu as $option)
+        li(class!="{{ ($option['hasChild'] == 1)? 'menu_dropdown' : '' }}")
+            | @if($option['hasChild'] == 0)
+            a(href!="{{ (!empty($option['route']))? $option['route'] : 'javascript:;' }}",class!="{{ ($option['active'] == 1)? 'ripple open_a' : 'ripple' }}")
+                span {{ $option['name'] }}
+            | @else
+            a(class!="{{ ($option['active'] == 1)? 'ripple open_a' : 'ripple' }}")
+                span {{ $option['name'] }}
+                .icon.icon-arrow_right
+            ul.dropdown_list
+                | @foreach($option['child'] as $optionChild)
+                li(class!="{{ ($optionChild['active'] == 1)? 'item_active' : '' }}")
+                    a(href!="{{ (!empty($optionChild['route']))? $optionChild['route'] : 'javascript:;' }}")
+                        | {{ $optionChild['name'] }}
+                | @endforeach
+            | @endif
+        | @endforeach

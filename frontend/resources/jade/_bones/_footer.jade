@@ -1,0 +1,17 @@
+include ../_config/page.jade
+include ../_mixins/mixins.jade
+script(type="text/template" id="tplProvince")
+	option(value="") Seleccione Provincia
+	<% _.each(provinces, function(postIts, index) { %>
+	option(data-value!="<%= index %>" value!="<%= postIts.id %>") <%= postIts.value %>
+	<% }); %>
+script(type="text/template" id="tplDistrict")
+	option(value="") Seleccione Distrito
+	<% _.each(districts, function(postIts, index) { %>
+	option(data-value!="<%= index %>" value!="<%= postIts.id %>") <%= postIts.value %>
+	<% }); %>
+script(type="text/template" id="tplModel")
+	option(value="") Seleccione Modelo
+	<% _.each(models, function(postIts, index) { %>
+	option(data-value!="<%= index %>" value!="<%= postIts.id %>") <%= postIts.name %>
+	<% }); %>

@@ -1,0 +1,14 @@
+include ../_config/page.jade
+| @if(session()->has('messageSuccess'))
+ul(class="alert alert_success")
+    li {{session('messageSuccess')}}
+| @endif
+| @if(session()->has('messageError'))
+ul(class="alert alert_error")
+    li {{session('messageError')}}
+| @endif
+| @if(session()->has('messageWarning'))
+ul(class="alert alert_warning")
+    li {{session('messageWarning')}}
+</ul>
+| @endif

@@ -1,0 +1,12 @@
+//-
+    Put only reutilizable vue's template
+
+mixin comment()
+    template#tmp_comment
+        .content_comment
+            p.autor @{{ index+1 }} es @{{ comment | json }}
+mixin bar()
+    template#tmp_bar
+        .content_bar
+            p Componente boton
+            button(v-on:click='notify') Dispatch Event

@@ -1,0 +1,459 @@
+.banner_top
+	width 100%
+	background #e9eef1
+	position relative
+	.bx-wrapper
+		max-width 1535px !important
+		width 100%
+	.advice_banner_top
+		position absolute
+		top 0
+		right 0
+		.col
+			span(1/2, cycle:1)
+			height 259px
+			text-align center
+			max-width 233px
+			font-size 0
+			&.weather
+				background #7d5b9b
+				.icon_weather_one
+					sprite($weather_one)
+					margin 0 auto
+			&.objectives
+				background #edc342
+				.icon_check_top
+					sprite($check_top)
+					margin 0 auto
+			.ctn
+				vertical-align middle
+				display inline-block
+				max-width 232px
+				span
+					font-size 22px
+					font-family $ZizouSlabBold
+					color white
+		.ctn_form
+			background #f3fdd5
+			padding-left 16px
+			padding-bottom 14px
+			.icon
+				color #6e8503
+				position absolute
+				bottom 15px
+				right 30px
+				font-size 22px
+	ul.slider_top
+		li
+			a
+				display block
+				font-size 0
+			img
+				width 100%
+	.bx-controls
+		text-align center
+		font-size 0
+		width 100%
+		height 26px
+		position relative
+		margin-top -25px
+	.bx-pager
+		position absolute
+		right 28%
+		.bx-pager-item
+			margin 0 5px
+			display inline-block
+			width 16px
+			height 16px
+			a
+				font-size 0
+				width 16px
+				height 16px
+				background #e8eef0
+				border-radius 50%
+				display block
+				border 2px solid #ff0000
+				&.active
+					background #ff0000
+.search
+	border 0
+	background #f3fdd5
+	font-family $HelveticaLTStdRoman
+	border-bottom 1px solid #d7d7d7
+	width 100%
+	max-width 420px
+	height 34px
+	margin-top 10px
+	padding-top 10px
+	position relative
+	color #6e8503
+	&::-webkit-input-placeholder
+		color #6e8503
+		font-size 16px
+		font-family $HelveticaLTStdRoman
+	&::-moz-placeholder
+		color #6e8503
+		font-size 16px
+		font-family $HelveticaLTStdRoman
+	&:-ms-input-placeholder
+		color #6e8503
+		font-size 16px
+		font-family $HelveticaLTStdRoman
+	&:-moz-placeholder
+		color #6e8503
+		font-size 16px
+		font-family $HelveticaLTStdRoman
+section
+	margin 0 auto
+	font-size 0
+	&.banner_top
+		padding 0
+	&.box_content_child
+		max-width 1502px
+		width 100%
+	h3.title
+		font-family $HelveticaLTStdRoman
+		font-size 17px
+		font-weight 400
+		text-align center
+		border-bottom 1px solid #e0e0e0
+		line-height 2.2
+		text-transform uppercase
+		margin-bottom 10px
+		&_black
+			color black
+		&_gray
+			color #7f858b
+		&_blue
+			color #028df1
+		&_blue_upc
+			color #3596ff
+		&_blue_2
+			color #0072b6
+		&_lightblue
+			color #33c6de
+		&_red
+			color #ff0000
+		&_purple
+			color #7d5b9b
+	article
+		background white
+		display inline-block
+		vertical-align top
+		&.ctn
+			padding 20px
+			margin 15px auto
+			&_dev_upc
+				width 70%
+				margin-right 2%
+				font-size 0
+				//max-width 998px
+				.col_jobs
+					padding 25px 30px
+					background #f3f3f5
+					width 49%
+					display inline-block
+					//max-width 466px
+					vertical-align top
+					margin-right 15px
+					.list_jobs
+						li
+							border-bottom 1px dashed #9a9a9a
+							margin-top 15px
+							//max-width 408px
+							width 100%
+							a
+								font-family $ZizouSlabRegular
+								font-size 0
+								padding-top 20px
+								padding-bottom 20px
+								display block
+								//max-width 408px
+								width 100%
+								.txt_list
+								.icon
+									display inline-block
+									vertical-align bottom
+								.txt_list
+									width 90%
+									font-size 16px
+								.icon
+									font-size 28px
+									text-align right
+									width 10%
+									color black
+								strong
+									font-size 18px
+									display block
+								span
+									font-size 15px
+									display block
+									line-height 1.4
+								&:hover
+									text-decoration none
+				.col_process
+					width 49%
+					vertical-align top
+					display inline-block
+					//max-width 469px
+					.row_process
+						background #eafbfa
+						font-size 0
+						padding-top 28px
+						img
+						span
+							display inline-block
+							font-family $ZizouSlabRegular
+							font-size 24px
+							vertical-align middle
+						img
+							width 100%
+							max-width 231px
+						span
+							width 100%
+							max-width 150px
+							text-align right
+						a
+							display block
+							color white
+							background #54bfb0
+							font-family $ZizouSlabRegular
+							font-size 15px
+							text-align right
+							line-height 2.75
+							height 43px
+							padding-right 35px
+							position relative
+							margin-top 18px
+							&:before
+								@extend .icon-arrow:before
+								font-family 'icons'
+								position absolute
+								right 14px
+								color #fda00e
+								top 4px
+								font-size 13px
+					.row_learn
+						font-size 0
+						padding-top 28px
+						ul
+						.certified
+							display inline-block
+							width 50%
+							vertical-align top
+							margin-top 15px
+						.certified
+							max-width 90px
+						ul
+							margin-left 85px
+							li
+								font-size 16px
+								font-family $ZizouSlabRegular
+								color #504f4f
+								line-height 1.5
+								position relative
+								&:before
+									@extend .icon-check:before
+									font-family 'icons'
+									position absolute
+									left -44px
+									color #fda00e
+									top 2px
+									font-size 17px
+			&.ctn_birthdays
+				width 28%
+				max-width 482px
+				.list_birthdays_tabs
+					background #33c6de
+					width 100%
+					max-width 439px
+					font-size 0
+					height 54px
+					margin-bottom 30px
+					li
+						display inline-block
+						width 25%
+						color #025a8f
+						font-family $HelveticaLTStdRoman
+						font-size 14px
+						text-align center
+						position relative
+						padding-top 25px
+						line-height 2
+						cursor pointer
+						&.active
+							color white
+							&:before
+								content ''
+								sprite($ico_gift_top)
+								position absolute
+								top 10px
+								left 39%
+				.list_birthdays_users
+					margin 0 auto
+					max-height 355px
+					position relative
+					li
+						a
+							display block
+							margin 0 auto
+							width 90%
+							padding 10px 0
+							height 71px
+							img
+							.txt_list_user
+							.icon
+								display inline-block
+								vertical-align middle
+							img
+								width 10%
+								min-width 44px
+								height 44px
+								border-radius 50%
+								margin-right 20px
+							.txt_list_user
+								font-family $ZizouSlabRegular
+								color #6a6a6a
+								font-size 14px
+								width 60%
+								span
+									display block
+							.icon
+								font-size 25px
+								color #3399ff
+								width 10%
+						&:nth-child(odd)
+							background #ebebec
+			&.ctn_news
+				width 100%
+				.row_news
+					font-family 0
+					.col
+						display inline-block
+						vertical-align top
+						font-size 0
+						width 49%
+						&.news_one
+							border-right 1px solid #e0e0e0
+							a
+							h2
+								color black
+								&:hover
+									text-decoration underline
+						h2
+							font-family $ZizouSlabRegular
+							font-size 22px
+					.box_news
+						width 50%
+						&_two
+							display inline-block
+							vertical-align top
+							width 50%
+							position relative
+							&:first-child
+								border-right 1px solid #e0e0e0
+							h2
+								color #838486
+							.carousel_box
+								max-width 300px
+					.ctn_txt
+						display inline-block
+						vertical-align top
+						width 48%
+						max-width 305px
+						margin-left 3%
+						.tags
+							border-bottom 1px solid #eeeeee
+							margin-top 8px
+							span
+							a
+								color #999999
+								font-family $HelveticaLTStdRoman
+								font-size 12px
+								line-height 2.8
+								font-weight 600
+						.box_txt
+							padding-top 20px
+							span
+								color #999999
+								font-family $HelveticaLTStdLight
+								font-size 15px
+						.date
+							margin-bottom 10px
+							span
+								font-family $HelveticaLTStdRoman
+								font-size 10.5px
+								color #929292
+								display inline-block
+								vertical-align middle
+								margin-left 7px
+.ctn_img_news
+	position relative
+	max-width 316px
+	width 100%
+	display inline-block
+	vertical-align top
+	&_right
+		max-width 300px
+	img
+		&.mask
+			position absolute
+			&_right
+				right 0
+				top 0
+			&_bottom
+				bottom 0
+				left 0
+.carousel_box
+	position relative
+	margin 0 auto
+	.icon
+		font-size 20px
+		position absolute
+		top 50%
+		cursor pointer
+		&:before
+			font-weight 600
+		&-arrow_light_left
+			left -20px
+		&-arrow_light_right
+			right -20px
+	a
+		color #7f7f7f
+		font-family $ZizouSlabRegular
+		font-size 16px
+		display block
+		margin-top 10px
+	.tags
+		margin-top 10px
+		a
+		span
+			color #3396ff
+			font-size 16px
+			font-family $UPCSGothicRgCapBold
+			font-style italic
+			display inline-block
+			margin 0 1px
+	.date
+		border-top 1px solid #e0e0e0
+		color #838486
+		font-size 12px
+		width 130px
+		margin-top 10px
+		padding-top 8px
+.date
+	i
+		font-style normal
+		text-align center
+		border-radius 50%
+		width 17px
+		height 17px
+		background #3396ff
+		color white
+		font-family $UPCSGothicRgCapBold
+		font-size 13px
+		display inline-block
+		vertical-align middle
+		line-height 1.4
+
+

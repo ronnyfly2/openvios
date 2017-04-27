@@ -1,0 +1,187 @@
+@font-face
+	fontFace('UPCSGothicRgCap-Bold')
+@font-face
+	fontFace('ZizouSlab-Regular')
+@font-face
+	fontFace('ZizouSlab-Medium')
+@font-face
+	fontFace('ZizouSlab-Bold')
+@font-face
+	fontFace('HelveticaLTStd-Light')
+@font-face
+	fontFace('HelveticaLTStd-Roman')
+@font-face
+	fontFace('HelveticaLTStd-Bold')
+html
+	background #f5f8fa
+body
+	font-family 'Arial'
+	font-smoothing antialiased
+	-webkit-font-smoothing antialiased
+	-moz-osx-font-smoothing grayscale
+.container
+	position relative
+	z-index 1
+	padding-top 40px
+	aside
+		position fixed
+		max-width 145px
+		top 40px
+		left 0
+		width 100%
+		background #3399ff url('../img/bg_menu.png') repeat
+		height calc(100vh - 40px)
+		text-align center
+	.content
+		background #e9eef1
+		padding-left 145px
+a
+	&:hover
+		text-decoration underline
+		cursor pointer
+.hack_space
+	width 1px
+	display inline-block
+	height 100%
+	vertical-align middle
+.btn
+	position relative
+	display inline-block
+	border none
+	text-align center
+	font-weight 300
+	line-height 2.3
+	color white
+	padding 0 30px
+	font-size 15px
+	user-select none
+	&_blue
+		background-color #3399ff
+	&_rose
+		background-color $rose
+	&_blue_light
+		background-color $blue_light
+	&_blue_light_2
+		background-color #03a9f4
+	&_submit
+		background-color #00d5f8
+	&_cancel
+		background-color #33445a
+	&_renew
+		background-color #33445a
+	&_excel
+		background-color #54368b
+	&_reject
+		background-color #f44336
+	&_approve
+		background-color #00c853
+	&_red
+		background-color #e42322
+	&:hover
+		opacity 0.75
+		text-decoration none
+h1
+	&.title
+		font-weight 600
+		font-size 2.1rem
+		color #33445a
+.alertify
+	z-index 10000
+
+.float_right
+	float right
+
+.float_left
+	float left
+//
+// *
+// 	transition all .2s ease-in-out
+.loader
+	background rgba(250, 250, 250, 0.5)
+	height 100%
+	left 0
+	position absolute
+	top 0
+	width 100%
+	z-index 4
+	span
+		left 46%
+		margin -16px 0 0 -16px
+		position absolute
+		top 50%
+		width 66px
+		height 66px
+		&:before
+		&:after
+			content ''
+			position absolute
+			top 0
+			left 0
+		&:before
+			width 60px
+			height 60px
+			border 3px solid #320a6f
+			border-radius 50%
+			animation loader5 1.20s infinite -0.3s
+		&:after
+			left 21px
+			bottom 0
+			margin auto
+			width 0
+			height 0
+			border 5px solid #0095ff
+			border-radius 5px
+			transform translate(-5px)
+			animation loader5-dots 2s infinite steps(1)
+.ublock
+	background rgba(255,255,255,.8)
+	height 100%
+	left 0
+	position absolute
+	top 0
+	width 100%
+	z-index 99
+ul.alert
+	display none
+
+// Efect Ripple
+.ripple
+	overflow hidden
+.ripple_effect
+	position absolute
+	border-radius 50%
+	width 50px
+	height 50px
+	background white
+	animation ripple-animation 2s
+
+// Efects & animations
+@keyframes ripple-animation
+	from
+		transform scale(1)
+		opacity 0.4
+	to
+		transform scale(100)
+		opacity 0
+
+@keyframes loader5
+	to {transform: rotateX(180deg);}
+@keyframes loader5-dots
+	0% {opacity: 0; }
+	25% {opacity: 0.3;}
+	50% {opacity: 0.6;box-shadow: 12px 0 0 #ffc829;}
+	75% {opacity: 1;box-shadow: 12px 0 0 #ffc829,24px 0 0 #f813b8;}
+
+.select2-dropdown
+	box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.18)
+
+.open_modal
+	.footer_modal
+		padding-top: 15px
+		text-align: right
+	.select2-dropdown
+		z-index: 10000 !important
+.select2-container .select2-selection--multiple
+	min-height: 40px !important
+.select2-selection__choice
+	font-size 14px

@@ -1,0 +1,31 @@
+include ../_config/page.jade
+include ../_mixins/mixins.jade
+
+head
+	meta(charset='#{page.charset}')
+	meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+	meta(name='language', content='#{page.lang}')
+	title #{page.title}
+	meta(name='title', content='#{page.title}')
+	meta(name='description', content='#{page.description}')
+	meta(name='author', content='#{page.author}')
+	meta(name='viewport', content='#{page.viewport}')
+	meta(name='robots', content='#{page.robots}')
+	meta(name='keywords', content='#{page.keywords}')
+	meta(property='og:description', content='#{page.description}')
+	meta(property='og:image', content='#{page.static}#{page.og.image}')
+	meta(property='og:site_name', content='#{page.name}')
+	meta(property='og:title', content='#{page.title}')
+	meta(property='og:type', content='#{page.og.type}')
+	meta(property='og:url', content='#{page.url}')
+	meta(name="csrf-token", content!="{{ csrf_token() }}")
+	link(href!='#{page.static}/css/all.css#{page.version}', media='all', rel='stylesheet', type='text/css')
+	link(href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700', rel='stylesheet', type='text/css')
+	link(href!='#{page.static}/img/favicon.ico', rel='shortcut icon', type='image/x-icon')
+	link(href='#{page.og.image}', rel='icon')
+
+	+ie('if lte IE 9')
+		//link(href!='#{page.static}/css/modules/all/ie.css', media='all', rel='stylesheet', type='text/css')
+		script(src!="#{page.static}/js/libs/selectivizr/selectivizr.js#{page.version}")
+		script(src!="#{page.static}/js/libs/html5shiv/dist/html5shiv.js#{page.version}")
+	include _head_scripts.jade

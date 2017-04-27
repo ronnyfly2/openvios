@@ -1,0 +1,20 @@
+include ../_config/page.jade
+script.
+    var yOSON = {
+    "module": "#{page.module}",
+    "controller": "#{page.controller}",
+    "action": "#{page.action}",
+    "baseHost": "",
+    "statHost": "",
+    "eHost": "#{page.url.elements}",
+    "statVers": "#{page.versions}",
+    "AppCore": {},
+    "AppSandbox": {},
+    "AppSchema": {
+    "modules": {},
+    "requires": {}
+    },
+    "static" : false,
+    "url" :  {},
+    "isLogged" : false
+    }

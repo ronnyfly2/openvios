@@ -1,0 +1,8 @@
+include ../_config/page.jade
+script(src!="#{page.static}/js/libs/jquery/dist/jquery.min.js" type="text/javascript")
+script(src!="#{page.static}/js/libs/yosonjs/dist/yoson.js#{page.version}", type="text/javascript")
+script(src!="#{page.static}/js/libs/yosonjs-utils/yosonjs-utils.js#{page.version}", type="text/javascript")
+script(src!="#{page.static}/js/dist/all/all.js#{page.version}", type="text/javascript")
+script(src!="#{page.static}/js/dist/#{page.module}/#{page.controller}/#{page.controller}.js#{page.version}", type="text/javascript")
+script(src!="#{page.static}/js/libs/yosonjs-utils/modules.js#{page.version}", type="text/javascript")
+script(src!="#{page.static}/js/libs/yosonjs-utils/appLoad.js#{page.version}", type="text/javascript")

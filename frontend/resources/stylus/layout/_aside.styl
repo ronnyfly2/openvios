@@ -1,0 +1,71 @@
+aside
+	overflow auto
+	.user
+		margin-top 22px
+		h3
+			color #e5ebe2
+			font-family $ZizouSlabMedium
+			font-size 16px
+		a
+			font-size 14px
+			font-family $ZizouSlabMedium
+			color black
+			position relative
+			&:after
+				content ''
+				sprite($ping_top)
+				position absolute
+				right -13px
+		img
+			width 66px
+			height 66px
+			border-radius 50%
+	ul
+		margin-top 130px
+		li
+			margin-top 10px
+		a
+			text-align center
+			color white
+			width 95%
+			max-width 100px
+			border-bottom 1px solid #76b8fa
+			display block
+			margin 0 auto
+			padding 7.5px 0
+			span
+				font-family $UPCSGothicRgCapBold
+				font-size 15px
+				display block
+				margin 0 auto
+				margin-top 7px
+			div
+				margin 0 auto
+			.icon-home
+				sprite($ico_home)
+			.icon-news
+				sprite($ico_news)
+			.icon-directory
+				sprite($ico_directory)
+			.icon-upc-family
+				sprite($ico_upc_family)
+			.icon-events
+				sprite($ico_events)
+			.icon-adn
+				sprite($ico_adn)
+			&:hover
+			&.actived
+				color #3e3d3f
+				.icon-home
+					sprite($ico_home_active)
+				.icon-news
+					sprite($ico_news_active)
+				.icon-directory
+					sprite($ico_directory_active)
+				.icon-upc-family
+					sprite($ico_upc_family_active)
+				.icon-events
+					sprite($ico_events_active)
+				.icon-adn
+					sprite($ico_adn_active)
+
