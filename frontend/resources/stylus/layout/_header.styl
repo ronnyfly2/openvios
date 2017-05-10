@@ -1,25 +1,49 @@
 header
-	center(100%)
-	background black
-	color white
-	padding 5px 2%
-	height 40px
+	background-color white
+	padding 12px 2%
+	height 91px
 	width 100%
 	position fixed
 	z-index 10
-	h1, ul
+	.box_center
+		height 66px
+	hr
+		height 30px
+		margin 0
+		border 0
+		border-right 2px solid #ececec
+		margin 0 10px
+	h1, nav
 		column(1/2)
 	h1
-		font-family $UPCSGothicRgCapBold
-		color #e5ebe2
-		font-size 25px
+		color #4a5360
+		margin-right 0
 		img
-		span
+		hr
+		.box_txt
+			display inline-block
 			vertical-align middle
-		img
-			margin-right 10px
+		span
+			font-size 13px
+			display block
+			font-family 'Roboto'
+	nav
+		margin-top 15px
+		float right
+		text-align right
+	.btn
+		margin-right 0
+		max-width 147.58px
+		border-radius 5px
+		border 1px solid #dfe0e1
+		box-shadow 0px 0px 5px 2px #e8e8e8
+	ul
+	.btn
+		display inline-block
+		vertical-align middle
 	ul
 		text-align right
+		vertical-align middle
 		li
 			max-width 150px
 			vertical-align middle
@@ -27,6 +51,10 @@ header
 			margin-right 15px
 			a
 				display block
-				color #e5ebe2
+				color #9a9ea5
 				line-height 2.24
-				font-family $UPCSGothicRgCapBold
+				font-size 15px
+				font-family $FiraSansCondensed-Regular
+				&.actived
+				&:hover
+					color #e7322f

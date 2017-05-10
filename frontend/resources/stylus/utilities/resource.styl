@@ -1,7 +1,7 @@
 @font-face
-	fontFace('UPCSGothicRgCap-Bold')
+	fontFace('FiraSansCondensed-Black')
 @font-face
-	fontFace('ZizouSlab-Regular')
+	fontFace('FiraSansCondensed-Regular')
 @font-face
 	fontFace('ZizouSlab-Medium')
 @font-face
@@ -15,30 +15,20 @@
 html
 	background #f5f8fa
 body
-	font-family 'Arial'
+	font-family 'Roboto'
 	font-smoothing antialiased
 	-webkit-font-smoothing antialiased
 	-moz-osx-font-smoothing grayscale
 .container
 	position relative
 	z-index 1
-	padding-top 40px
-	aside
-		position fixed
-		max-width 145px
-		top 40px
-		left 0
-		width 100%
-		background #3399ff url('../img/bg_menu.png') repeat
-		height calc(100vh - 40px)
-		text-align center
-	.content
-		background #e9eef1
-		padding-left 145px
-a
-	&:hover
-		text-decoration underline
-		cursor pointer
+	padding-top 91px
+.content
+	width 100%
+.box_center
+	width 100%
+	max-width 1120px
+	margin 0 auto
 .hack_space
 	width 1px
 	display inline-block
@@ -54,7 +44,11 @@ a
 	color white
 	padding 0 30px
 	font-size 15px
+	font-family $FiraSansCondensed-Regular
 	user-select none
+	&_white
+		background-color #ffffff
+		color #9a9ea5
 	&_blue
 		background-color #3399ff
 	&_rose
