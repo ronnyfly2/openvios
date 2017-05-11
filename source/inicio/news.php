@@ -21,13 +21,13 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://local.openvios/">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link href="http://local.openvios/public/css/all.css?ver=1494399326221" media="all" rel="stylesheet" type="text/css">
+    <link href="http://local.openvios/public/css/all.css?ver=1494483326580" media="all" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet" type="text/css">
     <link href="http://local.openvios/public/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="" rel="icon"><!--[if lte IE 9]>
       <!--link(href!='#{page.static}/css/modules/all/ie.css', media='all', rel='stylesheet', type='text/css')-->
-      <script src="http://local.openvios/public/js/libs/selectivizr/selectivizr.js?ver=1494399326221"></script>
-      <script src="http://local.openvios/public/js/libs/html5shiv/dist/html5shiv.js?ver=1494399326221"></script><![endif]-->
+      <script src="http://local.openvios/public/js/libs/selectivizr/selectivizr.js?ver=1494483326580"></script>
+      <script src="http://local.openvios/public/js/libs/html5shiv/dist/html5shiv.js?ver=1494483326580"></script><![endif]-->
     <script>
       var yOSON = {
       "module": "inicio",
@@ -58,10 +58,10 @@
         </h1>
         <nav>
           <ul>
-            <li><a href="javascript:;">Inicio</a></li>
-            <li><a href="javascript:;">Servicios</a></li>
-            <li><a href="javascript:;">Cómo funciona</a></li>
-            <li><a href="javascript:;">Contáctanos</a></li>
+            <li><a href="javascript:;" data-link="home">Inicio</a></li>
+            <li><a href="javascript:;" data-link="services">Servicios</a></li>
+            <li><a href="javascript:;" data-link="functions">Cómo funciona</a></li>
+            <li><a href="javascript:;" data-link="contacts">Contáctanos</a></li>
           </ul><a href="javascript:;" class="btn btn_white">REGISTRATE</a>
         </nav>
       </div>
@@ -249,28 +249,16 @@
     </div>
     <footer>
       <div class="box_center">
-        <p>2017 Copyright © Openvios.com . Todos los derechos reservados</p>
-        <p>Contacto: info@openvios.com | Teléfono: 975-192-066</p>
+        <div class="left">2017 Copyright © Openvios.com . Todos los derechos reservados</div>
+        <div class="right">Contacto: info@openvios.com | Teléfono: 975-192-066</div>
       </div>
     </footer>
-    <script type="text/template" id="tplProvince">
-      <option value="">Seleccione Provincia</option><% _.each(provinces, function(postIts, index) { %>
-      <option data-value="<%= index %>" value="<%= postIts.id %>"><%= postIts.value %></option><% }); %>
-    </script>
-    <script type="text/template" id="tplDistrict">
-      <option value="">Seleccione Distrito</option><% _.each(districts, function(postIts, index) { %>
-      <option data-value="<%= index %>" value="<%= postIts.id %>"><%= postIts.value %></option><% }); %>
-    </script>
-    <script type="text/template" id="tplModel">
-      <option value="">Seleccione Modelo</option><% _.each(models, function(postIts, index) { %>
-      <option data-value="<%= index %>" value="<%= postIts.id %>"><%= postIts.name %></option><% }); %>
-    </script>
     <script src="http://local.openvios/public/js/libs/jquery/dist/jquery.min.js" type="text/javascript"></script>
-    <script src="http://local.openvios/public/js/libs/yosonjs/dist/yoson.js?ver=1494399326226" type="text/javascript"></script>
-    <script src="http://local.openvios/public/js/libs/yosonjs-utils/yosonjs-utils.js?ver=1494399326226" type="text/javascript"></script>
-    <script src="http://local.openvios/public/js/dist/all/all.js?ver=1494399326226" type="text/javascript"></script>
-    <script src="http://local.openvios/public/js/dist/inicio/inicio/inicio.js?ver=1494399326226" type="text/javascript"></script>
-    <script src="http://local.openvios/public/js/libs/yosonjs-utils/modules.js?ver=1494399326226" type="text/javascript"></script>
-    <script src="http://local.openvios/public/js/libs/yosonjs-utils/appLoad.js?ver=1494399326226" type="text/javascript"></script>
+    <script src="http://local.openvios/public/js/libs/yosonjs/dist/yoson.js?ver=1494483326586" type="text/javascript"></script>
+    <script src="http://local.openvios/public/js/libs/yosonjs-utils/yosonjs-utils.js?ver=1494483326586" type="text/javascript"></script>
+    <script src="http://local.openvios/public/js/dist/all/all.js?ver=1494483326586" type="text/javascript"></script>
+    <script src="http://local.openvios/public/js/dist/inicio/inicio/inicio.js?ver=1494483326586" type="text/javascript"></script>
+    <script src="http://local.openvios/public/js/libs/yosonjs-utils/modules.js?ver=1494483326586" type="text/javascript"></script>
+    <script src="http://local.openvios/public/js/libs/yosonjs-utils/appLoad.js?ver=1494483326586" type="text/javascript"></script>
   </body>
 </html>

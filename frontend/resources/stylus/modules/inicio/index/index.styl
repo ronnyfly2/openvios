@@ -7,6 +7,17 @@
 		background #e6e6e6
 	&.griss_4
 		background #e0e0e0
+	&.white_1
+		background #ffffff
+	&.white_2
+		background white url('../img/bg_plain.png') no-repeat
+		background-position 78% 78%
+		padding 80px 0
+		strong
+			width 480px
+	&.white_3
+		background white
+		padding 30px 0
 	h2
 		color #4a5360
 		font-family 'Roboto'
@@ -14,6 +25,17 @@
 		font-weight 300
 		text-align center
 		padding-top 45px
+	h3
+		font-family $FiraSansCondensed-Thin
+		font-size 50.54px
+		color #4a5360
+		padding-top 25px
+	strong
+		font-family $FiraSansCondensed-Medium
+		font-size 19.17px
+		color #73787f
+		display block
+		margin 30px 0
 .row
 	&_steps
 		width 480px
@@ -45,3 +67,121 @@
 			color #4a5360
 			max-width 180px
 			margin-right 1%
+	&_timeline
+		text-align center
+		margin-top 40px
+		h3
+			font-family $FiraSansCondensed-Medium
+			font-size 19.17px
+			color #4a5360
+			margin-bottom 18px
+			padding-top 0
+		.circle_box
+			margin-bottom -6px
+			position relative
+			z-index 1
+
+		span
+			font-family $FiraSansCondensed-Regular
+			font-size 15px
+			color #82878e
+		.list_timeline
+			>li
+				list-style-type none
+				position relative
+				width 6px
+				margin 0 auto
+				background #d9d9d9
+				.icon
+				span
+					display inline-block
+					vertical-align top
+				.list_caracteristics
+					li
+						margin-bottom 18px
+				&:nth-child(even)
+					.box_time
+						left 45px
+						text-align left
+						span
+							width 360px
+						.icon
+							padding-right 10px
+				&:nth-child(odd)
+					.box_time
+						left -439px
+						text-align right
+						span
+							width 360px
+						.icon
+							color #e7322f
+							padding-left 10px
+				.box_time
+					position relative
+					bottom 0
+					width 420px
+					padding 15px
+				&:after
+					content ''
+					position absolute
+					left 50%
+					top 48%
+					transform translateX(-50%)
+					width 30px
+					height 30px
+					border-radius 50%
+					background #d2d4d6
+					cursor pointer
+				&.actived
+					&:after
+						background #e7322f
+						width 14px
+						height 14px
+						border solid 8px #d2d4d6
+	&_area
+		.list_carge
+			width 420px
+			li
+				width 100%
+				margin-bottom 34px
+				&:last-child
+					margin-bottom 0
+				.icon
+				span
+					display inline-block
+					vertical-align top
+				span
+					width 360px
+					margin-left 10px
+				.icon
+					color #e7322f
+					font-size 22px
+	&_shop
+		img
+		ul
+			width 47%
+			margin-left 0
+			margin-right 3%
+			display inline-block
+			margin-top 35px
+		ul
+			text-align right
+			margin-right 0
+			li
+				margin-bottom 34px
+				float right
+				&:last-child
+					margin-bottom 0
+				.circle
+				span
+					display inline-block
+					vertical-align top
+				.circle
+					width 17px
+					height 17px
+					background #e7322f
+					border-radius 50%
+				span
+					width 360px
+					margin-left 10px
+					text-align left

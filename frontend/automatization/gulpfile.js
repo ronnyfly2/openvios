@@ -65,7 +65,7 @@ gulp.task('jade', function () {
 		}).on('error', function(error) {
 			console.log( error );
 		}))
-		.pipe(rename({extname: '.php'}))
+		.pipe(rename({extname: '.html'}))
 		.pipe(gulp.dest(publicPatch.pathBack));
 });
 
