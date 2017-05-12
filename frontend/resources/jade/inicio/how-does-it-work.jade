@@ -1,0 +1,64 @@
+include ../_config/page.jade
+include ../_mixins/mixins.jade
+extends ../layouts/layout_inicio.jade
+block content
+	.container(data-page="how-does-it-work")
+		.content.white_4
+			section.box_center
+				article
+					.row.row_details
+						.col
+							h3 Tiempo de entrega
+							.calendar
+								img(src!="#{page.static}/img/calendar.png")
+								p 8 días
+							img.depend(src!="#{page.static}/img/arrow_depend.png")
+							.cloud
+								img(src!="#{page.static}/img/cloud.png")
+								p Factores externos
+							span.txt Estos pueden variar por varios factores entre ellos problemas de orden público, condiciones climatológicas y variaciones en itinerarios aéreos.
+						hr
+						.col
+							h3 Precio del servicio
+							.box
+								img(src!="#{page.static}/img/box.png")
+								span.desc 1 Kg
+								p S/.26.00
+							.plus +
+							.notes
+								img(src!="#{page.static}/img/notes.png")
+								span.desc.top Trámites de nacionalizacion
+								p S/.40.00
+							span.txt Ejemplo: SI tu paquete pesa 3.2 kg, el precio final sera (3x2  26)  + 40 = S/.123.2 + IGV S/.22.17
+								strong TOTAL S/.145.37
+					.row.row_remember
+						.col_remember
+							.quotes “
+							.box_txt
+								h4 Recuerde:
+								span La garantia es directamente con el proveedor y/o fabricante, nosotros nos encargamos de entregarte el producto exactamente como usted lo compro.
+							.quotes ”
+						.col_img
+							img(src!="#{page.static}/img/man.png")
+		.content.griss_5
+			section.box_center
+				article
+					h3 Medio de pago
+					.row.row_payment
+						.col
+							img(src!="#{page.static}/img/bbva.png")
+							span N° cuenta:
+							span 0011-0351-42-02002337896
+						.col
+							.box_img
+								img(src!="#{page.static}/img/visa.png")
+							.box_img.last_child
+								img(src!="#{page.static}/img/mastercard.png")
+							span.cash Efectivo contra entrega
+		.content.white_5
+			section.box_center
+				article
+					.row.row_mail_contact
+						img(src!="#{page.static}/img/message.png")
+						strong info@openvios.com
+						span N°de orden + factura + N° tracking
