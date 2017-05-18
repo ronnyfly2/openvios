@@ -21,7 +21,8 @@ head
 	meta(name="csrf-token", content!="{{ csrf_token() }}")
 	link(href!='#{page.static}/css/all.css#{page.version}', media='all', rel='stylesheet', type='text/css')
 	link(href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700', rel='stylesheet', type='text/css')
-	link(href!='#{page.static}/img/favicon.ico', rel='shortcut icon', type='image/x-icon')
+	link(href!='#{page.static}/img/logo_favicon.png', rel='shortcut icon', type='image/x-icon')
+	link(rel=icon href="img/logo_favicon.png" sizes="128x128" type="image/png")
 	link(href='#{page.og.image}', rel='icon')
 
 	+ie('if lte IE 9')

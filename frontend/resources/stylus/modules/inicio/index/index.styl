@@ -105,6 +105,12 @@
 				.list_caracteristics
 					li
 						margin-bottom 18px
+						.icon
+							font-size 18px
+						a
+							color #e7322f
+							cursor pointer
+							text-decoration underline
 				&:nth-child(even)
 					.box_time
 						left 45px
@@ -120,7 +126,6 @@
 						span
 							width 360px
 						.icon
-							color #e7322f
 							padding-left 10px
 				.box_time
 					position relative
@@ -139,6 +144,9 @@
 					background #d2d4d6
 					cursor pointer
 				&.actived
+					li
+						.icon
+							color #e7322f
 					&:after
 						background #e7322f
 						width 14px
@@ -159,6 +167,9 @@
 				span
 					width 360px
 					margin-left 10px
+					font-size 15px
+					font-family $FiraSansCondensed-Regular
+					color #82878e
 				.icon
 					color #e7322f
 					font-size 22px
@@ -170,6 +181,10 @@
 			margin-right 3%
 			display inline-block
 			margin-top 35px
+		span
+			font-family $FiraSansCondensed-Regular
+			font-size 15px
+			color #82878e
 		ul
 			text-align right
 			margin-right 0
@@ -191,6 +206,45 @@
 					width 360px
 					margin-left 10px
 					text-align left
+	&_how_does_it_work
+		width 100%
+		padding 35px 0
+		.box_img_global
+			margin 0 auto
+			max-width 922px
+			img
+				width 100%
+		.box_tabs_number
+			margin 0 auto
+			max-width 922px
+			ul
+				width 100%
+				box-shadow 0 0 10px rgba(134, 134, 134, 0.68)
+				li
+					display inline-block
+					font-family $FiraSansCondensed-Regular
+					font-size 30px
+					color #9a9ea5
+					background #ffffff
+					max-width 184.39px
+					width 20%
+					height 70px
+					text-align center
+					line-height 2.2
+					position relative
+					cursor pointer
+					&.actived
+					&:hover
+						color white
+						background #e7322f
+					&:after
+						content ''
+						position absolute
+						right -1px
+						width 2px
+						height 55px
+						top 8px
+						background #f3f5f6
 	&_details
 		text-align center
 		h3
@@ -203,9 +257,9 @@
 			vertical-align top
 			text-align left
 			&:first-child
-				width 380px
+				width 377px
 			&:last-child
-				width 420px
+				width 450px
 				.desc
 					font-size 20px
 					color #82878e
@@ -270,8 +324,12 @@
 			color #000000
 			vertical-align bottom
 			line-height 0.5
-			margin-left 40px
+			margin-left 10px
 			margin-bottom 5px
+		span
+			font-family $FiraSansCondensed-Regular
+			font-size 15px
+			color #82878e
 	&_remember
 		overflow hidden
 		width 100%
@@ -356,4 +414,88 @@
 			font-family $FiraSansCondensed-Regular
 			font-size 15px
 			color #82878e
+	&_contact
+		padding 40px 0
+		.col
+			display inline-block
+			vertical-align top
+			#map
+				width 100%
+				height 275px
+				margin 0 auto
+			&.maps
+				max-width 856px
+				width 80%
+			h3
+				padding 0
+				margin-bottom 20px
+			&.list
+				width 255px
+				ul
+					width 100%
+					li
+						width 100%
+						background white
+						position relative
+						padding 10px 16px
+						cursor pointer
+						&.actived
+							background #efefef
+					strong
+						color #000000
+						font-size 23px
+						font-family $FiraSansCondensed-Regular
+						margin 0
+						margin-bottom 2px
+					span
+						color #5d5d5d
+						font-size 16px
+						font-family $FiraSansCondensed-Light
+						display block
+					.icon
+						position absolute
+						font-size 18px
+						right 5px
+						bottom 15px
+						color #5d5d5d
+	&_social
+		padding 30px 0
+		.col
+			display inline-block
+			vertical-align top
+			.fb-page
+				width 350px
+				height 400px
+			&.box_social
+				max-width 768px
+				width 80%
+				padding-top 42px
+		.list_social_net
+			li
+				display inline-block
+				vertical-align middle
+				a
+					display block
+				span
+					color #63666b
+					font-size 16px
+					font-family $FiraSansCondensed-Light
+					vertical-align middle
+				.icon
+					display inline-block
+					font-size 25px
+					border-radius 50%
+					text-align center
+					width 35px
+					height 35px
+					color white
+					margin-right 5px
+					margin-left 5px
+					padding-top 3px
+					&-facebook
+						background #3b5998
+					&-twitter
+						background #26a6d1
+					&-whatsapp
+						background #1bd741
 
