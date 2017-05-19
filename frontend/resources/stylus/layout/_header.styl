@@ -1,6 +1,6 @@
 header
 	background-color white
-	padding 12px 2%
+	padding 12px 0
 	height 91px
 	width 100%
 	position fixed
@@ -15,10 +15,12 @@ header
 		border-right 2px solid #ececec
 		margin 0 10px
 	h1, nav
-		column(1/2)
+		display inline-block
+		vertical-align middle
 	h1
 		color #4a5360
 		margin-right 0
+		width 34%
 		img
 		hr
 		.box_txt
@@ -28,10 +30,18 @@ header
 			font-size 13px
 			display block
 			font-family 'Roboto'
+	.icon_menu_close
+	.box_menu
+		display none
+	.box_menu
+		&:after
+			content ''
+			display table
+			clear both
 	nav
-		margin-top 15px
-		float right
+		//*margin-top 15px
 		text-align right
+		width 65%
 	.btn
 		margin-right 0
 		max-width 147.58px

@@ -7,6 +7,7 @@ yOSON.AppSchema.modules =
 				"actions":
 					"index": ()->
 						yOSON.AppCore.runModule "getMap"
+						yOSON.AppCore.runModule "getTab"
 						return
 					"byDefault": () ->
 						return
@@ -22,7 +23,4 @@ yOSON.AppSchema.modules =
 	"allModules": () ->
 		yOSON.AppCore.runModule "activeMenu"
 		yOSON.AppCore.runModule "getBgImage"
-		#yOSON.AppCore.runModule "initSelect"
-		#yOSON.AppCore.runModule "rippleEfect"
-		#yOSON.AppCore.runModule "menuNav"
 		return

@@ -1,6 +1,6 @@
 include ../_config/page.jade
 include ../_mixins/mixins.jade
-header
+header.open_menu
 	.box_center
 		h1
 			img(src!="#{page.static}/img/logo_openvios.png", alt="logotipo | Openvios - ¿Quieres un producto del extrangero? Compra en línea, nosotros lo traemos")
@@ -8,7 +8,11 @@ header
 			.box_txt
 				span Telf.: 975-192-066
 				span info@openvios.com
-		nav
+		img.icon_menu_close(src!="#{page.static}/img/menu_close.png")
+		nav.open
+			.box_menu
+				img.logo_responsive(src!="#{page.static}/img/logo_responsive.png")
+				img.icon_menu_open(src!="#{page.static}/img/menu_open.png")
 			ul
 				li
 					a(href="./index.html" data-link="home") Inicio

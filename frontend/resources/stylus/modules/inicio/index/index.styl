@@ -33,7 +33,7 @@
 		padding-top 45px
 	h3
 		font-family $FiraSansCondensed-Thin
-		font-size 50.54px
+		font-size 41.54px
 		color #4a5360
 		padding-top 25px
 	strong
@@ -217,7 +217,7 @@
 		.box_tabs_number
 			margin 0 auto
 			max-width 922px
-			ul
+			.list_numbers
 				width 100%
 				box-shadow 0 0 10px rgba(134, 134, 134, 0.68)
 				li
@@ -233,10 +233,44 @@
 					line-height 2.2
 					position relative
 					cursor pointer
+					span
+						display none
+						font-family $FiraSansCondensed-Light
+						font-size 15px
+						width 300px
+						background-color white
+						color #82878e
+						text-align left
+						border-radius 6px
+						line-height 1.4
+						padding 10px 15px
+						position absolute
+						z-index 1
+						bottom 120%
+						left 50%
+						margin-left -150px
+						box-shadow 0 0 20px rgba(0,0,0,0.2)
+						&:after
+							content ""
+							position absolute
+							top 100%
+							left 50%
+							margin-left -8px
+							border-width 8px
+							border-style solid
+							border-color white transparent transparent transparent
+					hr
+						width 100%
+						height 1px
+						background #e6e6e6
+						border 0
 					&.actived
 					&:hover
 						color white
 						background #e7322f
+					&.actived
+						span
+							display block
 					&:after
 						content ''
 						position absolute
@@ -245,6 +279,9 @@
 						height 55px
 						top 8px
 						background #f3f5f6
+					&:last-child
+						&:after
+							display none
 	&_details
 		text-align center
 		h3
@@ -257,9 +294,11 @@
 			vertical-align top
 			text-align left
 			&:first-child
-				width 377px
+				max-width 377px
+				width 33.967%
 			&:last-child
-				width 450px
+				max-width 450px
+				width 40.544%
 				.desc
 					font-size 20px
 					color #82878e
@@ -424,13 +463,14 @@
 				height 275px
 				margin 0 auto
 			&.maps
-				max-width 856px
-				width 80%
+				max-width 865px
+				width 77.233%
 			h3
 				padding 0
 				margin-bottom 20px
 			&.list
-				width 255px
+				max-width 255px
+				width 22.768%
 				ul
 					width 100%
 					li
@@ -467,8 +507,8 @@
 				width 350px
 				height 400px
 			&.box_social
-				max-width 768px
-				width 80%
+				max-width 752px
+				width 67.754%
 				padding-top 42px
 		.list_social_net
 			li

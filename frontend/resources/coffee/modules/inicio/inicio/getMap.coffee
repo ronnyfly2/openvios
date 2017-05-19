@@ -11,9 +11,9 @@ yOSON.AppCore.addModule "getMap", (Sb) ->
 		lightnessMap	: 2
 	st = {}
 	dom = {}
-	latGeo = -12.104190
+	latGeo = -12.10419
 	longGeo = -76.939422
-	urlImgPin = '../public/img/pin.png'
+	urlImgPin = '../img/pin.png'
 	catchDom = (st)->
 		dom.btnTab			= $(st.btnTab)
 		return
@@ -33,7 +33,7 @@ yOSON.AppCore.addModule "getMap", (Sb) ->
 				urlImgPin = ele.data('ping')
 				events.getMapBox()
 			else
-				console.log 'nda'
+				console.log 'no hiciste nada'
 			return
 		getMapBox:(map)->
 			map = new google.maps.Map $("#map")[0],{

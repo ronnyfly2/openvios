@@ -1,7 +1,59 @@
-+between(700px, 900px)
-	.container
-		.col
-			background blue
++below(860px)
+	header
+		h1
+			width auto
+			.box_txt
+				display none
+		.icon_menu_close
+			display inline-block
+			width 45px
+			margin-top 18px
+			float right
+			cursor pointer
+		&.open_menu
+			height 100%
+		nav
+			overflow hidden
+			width 0
+			position absolute
+			&.open
+				width 100%
+				left 0
+				height 100%
+				background white
+				top 0
+				padding-bottom 15px
+				.box_menu
+					display block
+					background #e7322f
+					text-align left
+					height 91px
+					padding 0 1%
+					width 100%
+				.logo_responsive
+					width 140px
+					float left
+					margin-top 12px
+				.icon_menu_open
+					float right
+					width 45px
+					margin-top 30px
+					cursor pointer
+				ul
+					display block
+					width 100%
+					text-align center
+					li
+						max-width 100%
+						margin-right 0
+						width 100%
+						a
+							line-height 2.4
+							font-size 22px
+				.btn
+					display block
+					margin 0 auto
+					margin-top 15px
 +below(1000px)
 	.container
 		background yellow

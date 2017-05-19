@@ -1,24 +1,22 @@
 ###
-Content: obtiene la imagen.
+Content: obtiene el Tab.
 @autor Ronny Cabrera
 ###
-yOSON.AppCore.addModule "getBgImage", (Sb) ->
+yOSON.AppCore.addModule "getTab", (Sb) ->
 	defaults =
-		imgCtn : '.row_banner_top .ctn_img'
+		tabItem : '.list_numbers li'
 	st = {}
 	dom = {}
 	catchDom = (st)->
-		dom.imgCtn = $(st.imgCtn)
+		dom.tabItem = $(st.tabItem)
 		return
 	suscribeEvents = ->
-		events.getImage()
+		dom.tabItem.on 'click', events.getTabActive
 		return
 	events =
-		getImage:()->
-			img = dom.imgCtn.data('bg')
-			dom.imgCtn.css(
-				"background-image": "url("+img+")"
-			)
+		getTabActive:()->
+			dom.tabItem.removeClass('actived')
+			$(this).addClass('actived')
 			return
 	functions = {}
 	initialize = (opts) ->

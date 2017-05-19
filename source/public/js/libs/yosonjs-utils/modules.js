@@ -6,6 +6,7 @@ yOSON.AppSchema.modules = {
         "actions": {
           "index": function() {
             yOSON.AppCore.runModule("getMap");
+            yOSON.AppCore.runModule("getTab");
           },
           "byDefault": function() {}
         }
