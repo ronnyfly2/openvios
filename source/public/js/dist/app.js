@@ -24,7 +24,7 @@ function getDataRegister(){
         for(var key in dataRegister){
             console.log(dataRegister[key].ApellidosCompletos);
         }
-        //*notifyMe()
+        //*z0,ºnotifyMe()
     });
 }
 
