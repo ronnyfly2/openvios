@@ -15,32 +15,37 @@ function initApp(){
     formRegister = document.getElementById('formRegisterFire');
     formRegister.addEventListener('submit', sendRegister, false)
     database = firebase.database().ref().child('registro');
-    getDataRegister();
 }
 
-function getDataRegister(){
-    database.on('value', function(api){
-        var dataRegister = api.val();
-        for(var key in dataRegister){
-            console.log(dataRegister[key].ApellidosCompletos);
-        }
-        //*z0,ºnotifyMe()
-    });
-}
 
 function sendRegister(event){
-    event.preventDefault();
-    console.log(event.target.ApellidosCompletos.value);
-    database.push({
-        ApellidosCompletos: event.target.ApellidosCompletos.value,
-        Correo: event.target.Correo.value,
-        DNI: event.target.DNI.value,
-        Direccion: event.target.Direccion.value,
-        NombresCompletos: event.target.NombresCompletos.value,
-        RUC: event.target.RUC.value,
-        Telefonos: event.target.Telefonos.value
-    });
-    formRegister.reset();
+    var names=$('#NombresCompletos').val();
+    var emailForm = $('#Correo').val();
+    if(names != '' && emailForm != ''){
+        database.push({
+            ApellidosCompletos: event.target.ApellidosCompletos.value,
+            Correo: event.target.Correo.value,
+            DNI: event.target.DNI.value,
+            Direccion: event.target.Direccion.value,
+            NombresCompletos: event.target.NombresCompletos.value,
+            RUC: event.target.RUC.value,
+            Telefonos: event.target.Telefonos.value
+        });
+        $('.hide_element').text('GRACIAS POR REGISTRARTE, ESTAREMOS EN CONTACTO!').show();
+        formRegister.reset();
+        event.preventDefault();
+    }else{
+        $('#NombresCompletos').css({
+            background: '#efaaaa',
+            border: '#fd5858'
+        });
+         $('#Correo').css({
+            background: '#efaaaa',
+            border: '#fd5858'
+        })
+        $('.hide_element').text('llenar los campos obligatorios.').show();
+        event.preventDefault();
+    }
 }
 
 
